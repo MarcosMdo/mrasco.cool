@@ -4,13 +4,25 @@ import Image from 'next/image';
 import toaster from './toaster.png';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
+import useSound from 'use-sound';
+import toasterPop from './toaster.mp3';
+import toasterClick from './toasterClick.mp3';
+
 
 const Toaster = () => {
   const [showText, setShowText] = useState(false);
   const [showOptions, setShowOptions] = useState(false);
+  const [playPop] = useSound(toasterPop);
+  const [playClick] = useSound(toasterClick);
+
 
   const handleImageClick = () => {
     setShowText(!showText);
+    if (!showText) {
+      playPop();
+    } else {
+      playClick()
+    }
   };
 
   const handleShowOptions = () => {
