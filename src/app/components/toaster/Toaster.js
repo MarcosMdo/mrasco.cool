@@ -51,7 +51,7 @@ const Toaster = () => {
             <ul>
               <Link href="/comingsoon">new</Link>
               <Link href="/comingsoon">option 2</Link>
-              <a href="https:www.discofish.cool" target="_blank" rel="noreferrer">go</a>
+              <a href="https://www.discofish.cool" target="_blank" rel="noreferrer">go</a>
               <Link href="/mrasco">mrasco</Link>
             </ul>
             
