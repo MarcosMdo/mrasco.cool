@@ -1,0 +1,24 @@
+
+.toaster {
+    position: relative;
+}
+
+.imageContainer {
+    position: relative;
+}
+
+.text {
+    position: absolute;
+    top: 0;
+    /* left: 50%; */
+    transform: translateX(-50%);
+}
+.options {
+    padding-top: 10vh;
+    
+}
+
+.options a{
+    position: relative;
+    padding-right: 2vh;
+}

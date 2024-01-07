@@ -1,0 +1,65 @@
+import React, { useState } from 'react';
+import styles from './Toaster.module.css';
+import Image from 'next/image';
+import toaster from './toaster.png';
+import { motion, AnimatePresence } from 'framer-motion';
+import Link from 'next/link';
+
+const Toaster = () => {
+  const [showText, setShowText] = useState(false);
+  const [showOptions, setShowOptions] = useState(false);
+
+  const handleImageClick = () => {
+    setShowText(!showText);
+  };
+
+  const handleShowOptions = () => {
+    setShowOptions(!showOptions);
+  }
+
+  return (
+    <div className={styles.toaster}>
+      <AnimatePresence>
+        {showText && (
+          <motion.h1
+            className={styles.text}
+            initial={{ opacity: 0, y: -20, x:175 }}
+            animate={{ opacity: 1, y: -50, x:175}}
+            exit={{ opacity: 0, y: 50 }}
+            onClick={handleShowOptions}
+          >
+            mrasco.cool
+          </motion.h1>
+        )}
+      </AnimatePresence>
+      <motion.div
+        className={styles.imageContainer}
+        onClick={handleImageClick}
+        //whileHover={{ scale: 1.1 }} // Add a hover effect for visual feedback
+        whileTap={{ scale: 0.9 }} // Add a tap effect for visual feedback
+      >
+        <Image src={toaster} alt='a toaster' />
+      </motion.div>
+      <AnimatePresence>
+        {showOptions && (
+          <motion.div
+            className={styles.options}
+            initial={{ opacity: 0, y: -50, x:150 }}
+            animate={{ opacity: 1, y: -50, x:150}}
+            exit={{ opacity: 0, y: -50, x: 150}}
+          >
+            <ul>
+              <Link href="/comingsoon">new</Link>
+              <Link href="/comingsoon">option 2</Link>
+              <Link href="https:discofish.cool">go</Link>
+              <Link href="/mrasco">mrasco</Link>
+            </ul>
+            
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+};
+
+export default Toaster;
