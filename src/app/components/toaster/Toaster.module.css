@@ -3,14 +3,38 @@
     position: relative;
 }
 
+.toaster p {
+    color: red;
+    font-size: xx-large;
+}
+
+.toasterPop a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: large;
+}
+
+.toasterPop {
+    cursor: 'pointer';
+    font-size: xx-large;
+    font-family: 'Haskoy';
+}
+
 .imageContainer {
-    position: relative;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .text {
     position: absolute;
     top: 0;
-    /* left: 50%; */
     transform: translateX(-50%);
 }
 .options {
