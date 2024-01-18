@@ -17,8 +17,8 @@ const Toaster = () => {
   const [showExternal, setShowExternal] = useState(false);
   const [internalCounter, setInternalCounter] = useState(0);
   const [externalCounter, setExternalCounter] = useState(0);
-  const internalLinks = ["/comingsoon", "/comingsoon", "mrasco"];
-  const internalTexts = ["subtunes", "neo65", "mrasco"];
+  const internalLinks = ["/comingsoon", "/comingsoon", "mrasco", "/relocation"];
+  const internalTexts = ["subtunes", "neo65", "mrasco", "relocation"];
   const externalLinks = ["https://www.discofish.cool", "https://www.tummy.wtf"];
   const externalTexts = ["disco", "tummy"];
 
@@ -42,7 +42,7 @@ const Toaster = () => {
     if (option > 0.3) {
       setShowExternal(false);
       setShowInternal(true);
-      setInternalCounter(() => Math.floor(Math.random() * 3));
+      setInternalCounter(() => Math.floor(Math.random() * 4));
     } else {
       setShowInternal(false);
       setShowExternal(true);

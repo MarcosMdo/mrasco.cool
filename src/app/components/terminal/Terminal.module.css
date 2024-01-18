@@ -1,0 +1,56 @@
+/* Terminal.module.css */
+
+.terminal {
+    width: 600px;
+    height: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .windowBorder {
+    background-color: #333;
+    padding: 5px;
+    cursor: move;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .closeButton {
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .terminalOutput {
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    min-height: 150px;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  .terminalInput {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .terminalInput span {
+    margin-right: 5px;
+    color: #00ff00;
+  }
+  
+  .terminalInput input {
+    flex: 1;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+  }
+  

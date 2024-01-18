@@ -1,0 +1,83 @@
+/* 
+.box {
+    width: 600px;
+    height: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 1vh;
+    display: grid;
+  }
+
+  .textBox2 {
+    color: #dcb842;
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  .texBox1 {
+    color: #656669;
+    grid-column: 1;
+    grid-row: 1;
+  } */
+
+
+  .box {
+    display: flex;
+    width: 600px;
+    height: 15vh;
+  }
+  
+  .textBox2 {
+    width: 100%;
+    margin-left: -100%;
+    color: #dcb842;
+    font-size: large;
+  }
+  
+  .textBox1{
+    width: 100%;
+    color: #656669;
+    font-size: large;
+  }
+
+  .blur{
+    width: 100%;
+    color: #656669;
+    filter: blur(2px);
+    font-size: large;
+  }
+
+  .hover {
+    width: 100%;
+    margin-right: -100%;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    z-index: 3;
+    margin-top: 5vh;
+    margin-bottom: -5vh;
+  }
+
+  .resetButton {
+    float: right;
+    width: 50px;
+    padding: 10px;
+    /* margin-top: -10vh; */
+    padding-top: 5vh;
+  }
+  
+  .next:hover {
+    background-color: #656669;
+    color: white;
+  }
+  
+  .next {
+    background-color: #dcb842;
+    color: #656669;  
+    border-radius: 50%;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+  }
+  
