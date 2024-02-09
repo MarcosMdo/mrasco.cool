@@ -80,6 +80,13 @@
   font-weight: 300 900;
 }
 
+@font-face {
+  font-family: 'Handjet';
+  src:
+    url('./fonts/Handjet.ttf');
+  font-weight: 300 900;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

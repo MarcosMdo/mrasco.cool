@@ -9,12 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.509.0",
     "@vercel/analytics": "^1.1.1",
     "framer-motion": "^10.17.9",
-    "next": "14.0.4",
+    "next": "^14.0.4",
     "react": "^18",
     "react-dom": "^18",
     "react-draggable": "^4.4.6",
+    "react-dvd-screensaver": "^0.0.5",
+    "react-three-fiber": "^6.0.13",
+    "three": "^0.161.0",
     "url-loader": "^4.1.1",
     "use-sound": "^4.0.1"
   },
