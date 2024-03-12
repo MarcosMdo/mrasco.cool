@@ -75,7 +75,7 @@ const Toaster = () => {
         whileTap={{ scale: .9 }} 
         style={{cursor: 'pointer'}}
       >
-        <Image src={toaster} alt='a toaster' />
+        <Image src={toaster} alt='a toaster' className={styles.toasterImage} />
       </motion.div>
     </div>
   );
