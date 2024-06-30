@@ -1,0 +1,41 @@
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.imageGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.imageWrapper {
+  position: relative;
+  padding-top: 75%; /* This creates a 4:3 aspect ratio container */
+}
+
+.image {
+  object-fit: contain;
+}
+
+.container {
+  padding: 2rem;
+}
+
+.description {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+
