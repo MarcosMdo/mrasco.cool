@@ -16,4 +16,7 @@ module.exports = {
       });
       return config;
     },
+    images: {
+      domains: ['mrasco.s3.us-east-2.amazonaws.com'],
+     },
   };

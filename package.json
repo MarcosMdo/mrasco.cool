@@ -17,6 +17,7 @@
     "react-dom": "^18",
     "react-draggable": "^4.4.6",
     "react-dvd-screensaver": "^0.0.5",
+    "react-image-grid-gallery": "^2.0.1",
     "react-three-fiber": "^6.0.13",
     "three": "^0.161.0",
     "url-loader": "^4.1.1",
