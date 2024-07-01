@@ -33,7 +33,7 @@ export default function CollectionPage({ params }) {
   return (
     <div>
       <div className={shmasistyles.shmain}>
-        <Link href="https://www.mrasco.cool/shmasi" className={shmasistyles.shmasititle}>shmasi</Link>
+        <Link href="/shmasi" className={shmasistyles.shmasititle}>shmasi</Link>
         <div className={shmasistyles.infoContainer}>
           <div className={shmasistyles.personalInfo}>
             <p className={shmasistyles.name}>Ali Younis (he/him)</p>

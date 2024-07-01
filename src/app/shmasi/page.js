@@ -32,7 +32,7 @@ export default function Shmasi() {
 return (
   <div>
     <div className={styles.shmain}>
-      <Link href="https://www.mrasco.cool/shmasi" className={styles.shmasititle}>shmasi</Link>
+      <Link href="/shmasi" className={styles.shmasititle}>shmasi</Link>
       <div className={styles.infoContainer}>
         <div className={styles.personalInfo}>
           <p className={styles.name}>Ali Younis (he/him)</p>
