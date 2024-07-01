@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import styles from '../collection.module.css';
+import shmasistyles from '../../shmasi/page.module.css';
 import Link from 'next/link';
 
 import shmasi from '../../shmasi/shmasi_invert.png';
@@ -31,25 +32,25 @@ export default function CollectionPage({ params }) {
 
   return (
     <div>
-      <div className={styles.shmain}>
-        <Link href="https://www.mrasco.cool/shmasi" className={styles.title}>shmasi</Link>
-        <div className={styles.infoContainer}>
-          <div className={styles.personalInfo}>
-            <p className={styles.name}>Ali Younis (he/him)</p>
-            <p className={styles.jobTitle}>Photographer</p>
-            <p className={styles.location}>Southern California</p>
-            <div className={styles.contactInfo}>
-              <a href="mailto:shmasi.jpg@gmail.com" className={styles.email}>shmasi.jpg@gmail.com</a>
-              <a href="https://www.instagram.com/shmasi.jpg/" target="_blank" rel="noopener noreferrer" className={styles.instagram}>Instagram</a>
+      <div className={shmasistyles.shmain}>
+        <Link href="https://www.mrasco.cool/shmasi" className={shmasistyles.shmasititle}>shmasi</Link>
+        <div className={shmasistyles.infoContainer}>
+          <div className={shmasistyles.personalInfo}>
+            <p className={shmasistyles.name}>Ali Younis (he/him)</p>
+            <p className={shmasistyles.jobTitle}>Photographer</p>
+            <p className={shmasistyles.location}>Southern California</p>
+            <div className={shmasistyles.contactInfo}>
+              <a href="mailto:shmasi.jpg@gmail.com" className={shmasistyles.email}>shmasi.jpg@gmail.com</a>
+              <a href="https://www.instagram.com/shmasi.jpg/" target="_blank" rel="noopener noreferrer" className={shmasistyles.instagram}>Instagram</a>
           </div>
           </div>
-          <div className={styles.logoContainer}>
+          <div className={shmasistyles.logoContainer}>
             <Image
               src={shmasi}
               alt="Shmasi Logo"
               width={100}
               height={100}
-              className={styles.logo}
+              className={shmasistyles.logo}
             />
           </div>
         </div>
