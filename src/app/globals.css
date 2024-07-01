@@ -87,6 +87,13 @@
   font-weight: 300 900;
 }
 
+@font-face {
+  font-family: 'CommitMono';
+  src:
+    url('./fonts/CommitMono-400-Regular.otf');
+  font-weight: 300 900;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

@@ -17,8 +17,8 @@ const Toaster = () => {
   const [showExternal, setShowExternal] = useState(false);
   const [internalCounter, setInternalCounter] = useState(0);
   const [externalCounter, setExternalCounter] = useState(0);
-  const internalLinks = [ "/comingsoon", "/comingsoon", "/relocation", "/radio"];
-  const internalTexts = [ "neo65", "mrasco !", "relocation !", "radio !"];
+  const internalLinks = [ "/relocation", "/radio", "/shmasi"];
+  const internalTexts = [ "relocation !", "radio !", "shmasi !"];
   const externalLinks = ["https://www.discofish.cool", "https://www.tummy.wtf", "https://www.subtunes.app", "https://ear.cool/", "https://vanish.love/"];
   const externalTexts = ["discofish !", "tummy !", "subtunes !",  "ear !", "vanish !"];
 
