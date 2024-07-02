@@ -34,7 +34,6 @@ export default function CollectionPage({ params }) {
     <div>
       <div className={shmasistyles.shmain}>
         <Link href="/shmasi" className={shmasistyles.shmasititle}>shmasi</Link>
-        <div className={shmasistyles.infoContainer}>
           <div className={shmasistyles.personalInfo}>
             <p className={shmasistyles.name}>Ali Younis (he/him)</p>
             <p className={shmasistyles.jobTitle}>Photographer</p>
@@ -42,16 +41,6 @@ export default function CollectionPage({ params }) {
             <div className={shmasistyles.contactInfo}>
               <a href="mailto:shmasi.jpg@gmail.com" className={shmasistyles.email}>shmasi.jpg@gmail.com</a>
               <a href="https://www.instagram.com/shmasi.jpg/" target="_blank" rel="noopener noreferrer" className={shmasistyles.instagram}>Instagram</a>
-          </div>
-          </div>
-          <div className={shmasistyles.logoContainer}>
-            <Image
-              src={shmasi}
-              alt="Shmasi Logo"
-              width={100}
-              height={100}
-              className={shmasistyles.logo}
-            />
           </div>
         </div>
       </div>

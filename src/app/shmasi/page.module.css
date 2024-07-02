@@ -25,6 +25,14 @@
     text-align: center;
     margin-bottom: 1rem;
   }
+
+  @media only screen and (max-width:640px) {
+    .personalInfo {
+      text-align: center;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }
   
   .name {
     font-size: 1.3rem;

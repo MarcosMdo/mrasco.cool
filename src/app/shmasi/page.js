@@ -33,7 +33,6 @@ return (
   <div>
     <div className={styles.shmain}>
       <Link href="/shmasi" className={styles.shmasititle}>shmasi</Link>
-      <div className={styles.infoContainer}>
         <div className={styles.personalInfo}>
           <p className={styles.name}>Ali Younis (he/him)</p>
           <p className={styles.jobTitle}>Photographer</p>
@@ -41,16 +40,6 @@ return (
           <div className={styles.contactInfo}>
             <a href="mailto:shmasi.jpg@gmail.com" className={styles.email}>shmasi.jpg@gmail.com</a>
             <a href="https://www.instagram.com/shmasi.jpg/" target="_blank" rel="noopener noreferrer" className={styles.instagram}>Instagram</a>
-        </div>
-        </div>
-        <div className={styles.logoContainer}>
-          <Image
-            src={shmasi}
-            alt="Shmasi Logo"
-            width={100}
-            height={100}
-            className={styles.logo}
-          />
         </div>
       </div>
     </div>
