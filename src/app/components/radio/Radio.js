@@ -26,7 +26,8 @@ const channels = [
   'radio/Thom.m4a',
   'radio/Tia Carmen Ana.m4a',
   'radio/Zendesk 2.m4a',
-  'radio/Zendesk.m4a'
+  'radio/Zendesk.m4a',
+  'radio/Juana @ Pappy’s.m4a'
 ];
 
 const Radio = () => {
