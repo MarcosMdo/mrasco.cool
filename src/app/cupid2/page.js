@@ -47,7 +47,7 @@ export default function Home() {
         const objectUrl = URL.createObjectURL(blob);
 
         var audio = new Audio(objectUrl);
-        
+        audio.volume = .7
         setSound(audio);
       } catch (error) {
         console.error('Error fetching mp3:', error);
@@ -111,6 +111,9 @@ export default function Home() {
 
   const handlePlaySound = () => {
     if (sound) {
+      if (isVoicePlaying) {
+        voice.pause()
+      }
       if (isPlaying) {
         sound.pause(); // Pause the audio
       } else {
